@@ -1,79 +1,176 @@
-<!doctype html>
-<html lang="EN">
-  <head>
-    <!-- Page setup -->
-    <meta charset="utf-8">
-    <title>Ho Ming Yin's Website</title>
-    <meta name="description" content="Ho Ming Yin">
-    <meta name="author" content="Ho Ming Yin">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <link rel="icon" type="image/png" href="favicon.png">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/8f41703b4e.js" crossorigin="anonymous"></script>
+    </head>
   
-    <!-- Stylesheets -->
-    <!-- Reset default styles and add support for google fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-   
-    <!-- Custom styles -->
-    <link href="style.css" rel="stylesheet" type="text/css" />
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
-
-    <!-- Want to add Bootstrap? -->
-    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-    
-  </head>
-  
-  <body>
-
-    <header id="header">
-      <img src="https://media.licdn.com/dms/image/C5603AQGGn-rfBwn8MA/profile-displayphoto-shrink_400_400/0/1658733178040?e=1714003200&v=beta&t=kEPDhntBNGI7mH0yG7tX2RXR5MFV8w_xQZzNfdEbYSY">
-      <h1>Ho Ming Yin </h1>
-      
-      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
-      <ul class="main-menu">
-        <li><a href="#home">home</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#contact">contact</a></li>
-      </ul>                 
-    </header>
-   
-    <div id="container">
-      <div class="inner">
-        <div id="content"> 
-          
-          <div id="home" class="content-region hide">
-            <h2>Home</h2>
-            <p>
-              This is a simple website template published with Github Pages. <a href="https://github.com/cpl-makerlab/simple-website-template">Fork this repository</a> to create your own site!
-            </p>
-          </div>
-          
-          <div id="about" class="content-region hide">
-            <h2>About</h2>
-            <p>
-              Sed tempus urna et pharetra pharetra massa massa ultricies. Porttitor rhoncus dolor purus non enim praesent. Id aliquet risus feugiat in ante metus dictum. 
-            </p>
-          </div>
-          
-          <div id="contact" class="content-region hide">
-            <h2>Contact</h2>
-            <p>
-              Pellentesque nec nam aliquam sem et tortor consequat. Quisque sagittis purus sit amet volutpat consequat. Magna eget est lorem ipsum dolor. 
-            </p>
-          </div>
-          
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</li>
+                    <li><a href="#">Services</li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+<div class="header-text">
+    <p>Welcome!</p>
+    <h1>Hi, I'm <span>Yin</span><br>From Hong Kong</h1>
+</div>
+</div>  
         </div>
-      </div>
+<!--About-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user2.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            With over 11 years of work experience in both the private and non-profit sectors, I have undertaken diverse roles and responsibilities including project management, stakeholder engagement, editorial functions, and social media communication. I hold a Bachelor of European Studies from HKBU and a Master of General Management from Steinbeis University Berlin. My professional journey has afforded me the opportunity to work internationally in Germany, China, and Singapore, enriching my language proficiency and multicultural communication skills. Additionally, fueled by my passion for the environment and climate change, I became an EFFAS certified ESG Analyst (CESGA) in November 2023. Known for my ability to adapt quickly to new challenges and diverse roles, I am eager to leverage my expertise and contribute to impactful projects.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span> Programme Management</span><br> Event hosting and Coordination</li>
+                                <li><span> Stakeholder Engagement</span><br></li>
+                                <li><span> ESG and Sustinability</span><br> EFFAS Certified ESG Analyst</li>
+                                <li> <span> Language Skills</span><br>Proficient in Cantonese, Mandarin, English and German. Beginner in Japanese</li>
+                            </ul>
+                        </div> 
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span> June 2021- Current (Singapore) </span><br> Programme Manager at Konrad Adenauer Foundation</li>
+                                <li><span> Jan 2022 - Current (Freelance) </span><br>Policy Researcher for Stantec "EU-Hong Kong Discussion Series" Project</li>
+                                <li><span> Jan 2019 - Dec 2020 (Hong Kong) </span><br> Programme Manager at Friedrich Naumann Foundation Global Innovation Hub</li>
+                                <li> <span> 2018 (Career Break) </span><br>Thruhiked the Pacific Crest Trail in 5 months (4200km) </li>
+                                <li> <span> Dec 2013 - Nov 2017 (Shanghai, China) </span><br>Project Manager at REMONDIS Industries Services Ltd. </li>
+                                <li> <span> Nov 2011 - Nov 2013 (Lünen, Germany) </span><br>Management Trainee at REMONDIS International GmbH</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span> Nov 2023</span><br> EFFAS Certified ESG Analyst (CESGA)</li>
+                                <li><span> 2013</span><br>MA in General Management at Steinbeis University Berlin, Germany</li>
+                                <li><span> 2011</span><br> BSc in European Studies at Hong Kong Baptist University</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!---------services------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+<div class="services-list">
+    <div>
+        <i class="fa-solid fa-book"></i>
+        <h2>My Book List</h2>
+        <p>Here you can find books that I have read</p>
+        <a href="#">Learn more</a>
+    </div>
+    <div>
+        <i class="fa-solid fa-person-hiking"></i>
+        <h2>My Favourite Hiking Routes</h2>
+        <p>template jkk jkjioj adjklasjd asdjkajd kjasdlkajsd</p>
+        <a href="#">Learn more</a>
+    </div>
+    <div>
+        <h2>App Design</h2>
+        <p>template jkk jkjioj adjklasjd asdjkajd kjasdlkajsd</p>
+        <a href="#">Learn more</a>
+    </div>
+</div>
     </div>
 
-    <footer>  
-      Footer region
-    </footer>
-    
-    <!-- Load additional JS scripts here -->
-    <script type="text/javascript" src="script.js"></script>
-    
-  </body>
+</div>
+
+<!---------portfolio!-----> 
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p> dkjfj jkfjsdklfj jskldfjskdlafj klsjf;klsadjf kfdjs</p>
+                    <a href="#"><i class="fa-solid fa-hashtag"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                    <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p> dkjfj jkfjsdklfj jskldfjskdlafj klsjf;klsadjf kfdjs</p>
+                    <a href="#"><i class="fa-solid fa-hashtag"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p> dkjfj jkfjsdklfj jskldfjskdlafj klsjf;klsadjf kfdjs</p>
+                            <a href="#"><i class="fa-solid fa-hashtag"></i></a>
+                        </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!------------------contact------------->
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> mingyin1988@gmail.com</p>
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/ming-yin-ho-9389ba83/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+<form>
+    <input type="text" name="Name" placeholder="Your Name" required>
+    <input type="text" name="email" placeholder= "Your Email" required>
+    <textarea name="Message" rows="6" placeholder="Leave Your Message" required></textarea>
+    <button type="submit" class="btn btn2">Submit</button>
+</form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+   var tablinks = document.getElementsByClassName("tab-links")
+   var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+    </body>
 </html>
